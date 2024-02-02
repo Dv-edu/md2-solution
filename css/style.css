@@ -1,1 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    background-color: chocolate;
+    padding: 7px;
+    border:2px double;
+    margin: 10px 7px;
+}
+section {
+    position: relative;
+    margin:5px 0;
+    float: left;
+    width: 100%;
+}
+section > div {
+    background-color: antiquewhite;
+}
+section  div.section-title {
+    position: relative;
+    right: 0px;
+    float: right;
+    background-color: aqua;
+    padding: 7px;
+    border:1px solid;
+}
+section p {
+    clear: both;
+    padding: 7px;
+}
+#sec1  div.section-title {
+    background-color: aqua;
+}
+#sec2  div.section-title {
+    background-color: blue;
+    color: rgb(0, 255, 85);
+}
+#sec3  div.section-title {
+    background-color: rgb(134, 0, 119);
+    color: rgb(0, 255, 4);
+}
+
+.border {
+    border: 2px solid;
+    margin: 7px;
+}
+/* ******* Desktop ********** */
+
+@media (min-width: 992px) {
+    section {
+        width: 33.33%;
+    }
+}
+
+/* ******** Tablet ******** */
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 50%;
+    }
+    #sec3 {
+        width: 100%;
+    }
+}
+/* ******** SMALL DEVICES WIll USE DEFAULT STYLE *********** */
+
+
 
